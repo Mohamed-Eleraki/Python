@@ -1,10 +1,10 @@
 # Code Formatting Rules
 =====================================
 
-## 1. File Seperation
+## 1. File Separation
 -------------------------------
 Small files are easier to understand more than large files.
-Seperate files for each functionality, and call them in the main file.
+Separate files for each functionality, and call them in the main file.
 
 ## 2. Function/Loop Variables definition
 -------------------------------
@@ -19,25 +19,25 @@ Each file should have a README.md file that explains the purpose of the file/fun
 
 ## 4. Calling
 -------------------------------
-1. Fuctions should be called at the end of the function itself, not at the top of the file.
+1. Functions should be called at the end of the function itself, not at the top of the file.
 
 2. The caller function should be above the calle.
 
-3. Caller and Callee should be clossed.
+3. Caller and Callee should be closed.
 *Clean Code Page 81*
 
-## 5. Concepunal affinity
+## 5. Conceptual affinity
 -------------------------------
 Group affinity functions together in the same file.
 
 ## 6. Code Structure
 -------------------------------
-Your code should be read like an article, Top-Down narative.
+Your code should be read like an article, a Top-Down narrative.
 At the top of the file, explain the purpose of the file. The more Downwards the more details we got.
 
 ## 7. Line Length
 -----------------
-Limit lines to a maximum of 80 characters to avoid horizontal scrolling and improve readability. The file long should match the following hashes.
+Limit lines to a maximum of 80 characters to avoid horizontal scrolling and improve readability. The file length should match the following hashes.
 ################################################################################
 
 ## 8. Blank Lines
@@ -67,7 +67,7 @@ Keep functions small and focused on a single task. A good rule of thumb is to ke
 
 ## 12. Avoid Deep Nesting
 -------------------------
-Limit the depth of nested structures to improve readability and maintainability. either use new line with indentation.
+Limit the depth of nested structures to improve readability and maintainability. either use a new line with indentation.
 
 
 
