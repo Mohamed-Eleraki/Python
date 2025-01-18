@@ -59,9 +59,11 @@ s = "i love python, and 3d graphics"
 print(s.upper())  # lower as well
 
 
-#########
+############
 # swapcase #
-#########
+############
+
+# convert from cap to lower and vice versa
 
 s = "i love python"
 x = "I LOVE PYTHON"
@@ -101,7 +103,7 @@ s = "Hello|world|will|not|split"
 print(s.split("|"))  # ['Hello', 'world']
 print(s.split("|", 2))  # will split the first 2 elements  ['Hello', 'world', 'will|not|split']
 print(s.rsplit("|", 2))
-
+print(s.split("|", -2))
 
 
 
@@ -116,12 +118,28 @@ print(n.center(9, "#"))  # hashes
 ##eraki##
 
 
+#########
+# rjust #
+#########
+
+n = "eraki"
+print(n.rjust(9))  # spaces
+print(n.rjust(9, "#"))  # hashes
+#   eraki  
+##eraki
+
+print(n.ljust(9))  # spaces
+print(n.ljust(9, "#"))  # hashes
+#eraki   
+# eraki##
 
 
 ##########
 # count #
 ##########
-# count/search a specific word
+
+# count/search a specific word - count how many times it appears
+
 x = "my name is eraki, another eraki"
 print(x.count("eraki"))  # 2
 print(x.count("eraki", 0, 20))  # 1   - define from and to
@@ -137,4 +155,105 @@ print(x.startswith("my"))  # True
 
 print(x.startswith("my", 0, 10))  # True   -   from to 
 
-print(x.endswith("i")) # True
+print(x.endswith("i")) # True  -  end with i
+
+
+#########
+# index #
+#########
+
+# find the index of the word
+### index has an issue, that if index not exist will throw an error and stop executing ###
+
+x = "my name is eraki"
+print(x.index("er"))  # index number 11 - you can define from and to as well
+
+
+#########
+# find #
+#########
+
+# find the find of the word
+### find instead will print out -1 if the search value does not exist ###
+
+x = "my name is eraki"
+print(x.find("er"))  # find number 11 - you can define from and to as well
+
+
+##############
+# splitlines #
+##############
+
+# gather back the multi lines string into a list
+
+e = """First line
+Secound line
+third line"""  # multiple lines output
+
+print(e.splitlines())  # ['First line', 'Secound line', 'third line']
+
+f = """First line\nSecound line\nthird line"""  # multiple lines output
+
+print(f.splitlines())  # ['First line', 'Secound line', 'third line']
+
+
+
+##############
+# expandtabs #
+##############
+
+# controle the tab spaces number
+
+x = "I\tlove\tpython"
+print(x)
+print(x.expandtabs(2))  # I love python  - replace 4 spaces with just 2
+
+
+
+######################
+# Checking - boolean #
+######################
+
+x = "I Love Python"
+print(x.istitle())  # True
+print(x.isupper())  # False
+
+x = " "
+print(x.isspace())  # True
+
+
+one = "mohamed"  # string can be a variable name
+two = "mohamed--eleraki"  # string cannot be as a variable name
+three = "mohamed1234"
+
+
+print(one.isidentifier())  # True
+print(two.isidentifier())  # False
+
+print(one.isalpha())  # True - lpha bit charts
+print(three.isalnum())  # True - alpha and numbers
+
+
+
+
+###########
+# Replace #
+###########
+
+x = "one two three one one"
+print(x.replace("one", "1"))  # replace one to 1
+print(x.replace("one", "1", 1))  # replace first one to 1
+# 1 two three 1 1
+# 1 two three one one
+
+
+
+########
+# join #
+########
+
+# revert a list to string
+
+x = ["one", "two", "three"]
+print(" ".join(x))  # one two three with space seperator
+print("-".join(x))  # one-two-three with - seperator
