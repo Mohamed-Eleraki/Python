@@ -1,5 +1,6 @@
 # Reference
 # https://pyformat.info/
+# video num 18
 
 
 # Data formating is more powerfull than concatenation
