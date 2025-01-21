@@ -89,3 +89,43 @@ print(my_awesome_list_8)  # [2, 3, 1, 4]
 my_awesome_list_9 = ["one", "two", "one", 1, 2, 1.5, True]
 my_awesome_list_9.reverse()  # Reverse the list in place.
 print(my_awesome_list_9)  # [True, 1.5, 2, 1, 'one', 'two', 'one']
+
+
+###################
+# Clear all items #
+###################
+
+my_awesome_list_10 = ["one", "two", "one", 1, 2, 1.5, True]
+my_awesome_list_10.clear()  # Remove all items from the list.
+print(my_awesome_list_10)  # []
+
+
+##################
+# Copy all items #
+##################
+
+my_awesome_list_11 = ["one", "two", "one", 1, 2, 1.5, True]
+my_awesome_list_12 = my_awesome_list_11.copy()  # Copy the list.
+print(f"main {my_awesome_list_11}")  # ['one', 'two', 'one', 1, 2, 1.5, True]
+print(f"copied {my_awesome_list_12}")  # ['one', 'two', 'one', 1, 2, 1.5, True]
+
+my_awesome_list_11.append(5)
+
+print(f"main {my_awesome_list_11}") 
+print(f"copied {my_awesome_list_12}")  # will not append the 5 value
+
+
+
+#########
+# Count #
+#########
+my_awesome_list_13 = ["one", "two", "one", 1, 2, 1.5, True]
+print(my_awesome_list_13.count("one"))  # 2 - How many one
+ 
+ 
+#########
+# pop   #
+#########
+my_awesome_list_14 = ["one", "two", "one", 1, 2, 1.5, True]
+print(my_awesome_list_14.pop(1))  # two - Remove the item at the given position in the list and return it.
+print(my_awesome_list_14)  # ['one', 'two', 'one', 1, 2, 1.5]
