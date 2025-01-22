@@ -129,3 +129,30 @@ print(my_awesome_list_13.count("one"))  # 2 - How many one
 my_awesome_list_14 = ["one", "two", "one", 1, 2, 1.5, True]
 print(my_awesome_list_14.pop(1))  # two - Remove the item at the given position in the list and return it.
 print(my_awesome_list_14)  # ['one', 'two', 'one', 1, 2, 1.5]
+
+
+# Repeatte the list printing
+print(my_awesome_list_14 * 3)  # ['one', 'two', 'one', 1, 2, 1.5, 'one', 'two', 'one', 1, 2, 1.5, 'one', 'two', 'one', 1, 2, 1.5]
+
+
+# Find the index number of a value - where is the 2 placed.
+my_awesome_list_15 = [1,2,3,2,4,5,6,7,8,9,10]
+print(my_awesome_list_15.index(2))  # 1 - will return the first value only - if you want to get all the values, you can use a loop
+
+# District the list vlaues to variables
+a, b, c = my_awesome_list_15
+print(a)  # 1
+print(b)  # 2
+print(c)  # 3
+# You can also use the following syntax
+a, b, *c = my_awesome_list_15
+print(a)  # 1
+print(b)  # 2
+print(c)  # [3, 2, 4, 5, 6, 7, 8, 9, 10] - the rest of the values
+
+# you can also use the following syntax - ignoring
+my_awesome_tuble_16 = (1,2,3,4)
+a, _, _, c = my_awesome_tuble_16
+print("####")
+print(a)  # 1
+print(c)  # 4
