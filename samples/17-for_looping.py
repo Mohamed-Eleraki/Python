@@ -17,3 +17,17 @@ skills = {
 for skill in skills:
     print(f"My progress in lange {skill} is {skills[skill]}")
     print(f"My progress in lange {skill} is {skills.get(skill)}")  # the same
+    
+    
+# example 4
+skills = {
+    "Html": "90%",
+    "CSS": "80%",
+}
+
+print(skills.items())  # dict_items([('Html', '90%'), ('CSS', '80%')])
+
+for skill_key, skill_value in skills.items():
+    print(f"{skill_key} is {skill_value}")
+    #Html is 90%
+    #CSS is 80%
