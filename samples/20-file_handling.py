@@ -11,3 +11,6 @@ print(os.path.dirname(os.path.abspath(__file__))) # print the working directory 
 print("#" * 50)
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 print(os.getcwd())
+
+# ignore any special characters, raw string
+file = open(r"C:\Python\nfile.txt")  # will not consider it as a new line
